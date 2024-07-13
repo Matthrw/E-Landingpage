@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(#fff 40%, rgba(19, 24, 63, 0.25) 90%);
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3rem 5rem;
+}
+
+.header button {
+  padding: 0.7rem;
+  background: #13183f;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 1.2rem;
+  width: 10%;
+  margin-right: 3rem;
+  cursor: pointer;
+}
+
+.header button:active {
+  background-color: #666ca3;
+  color: #fff;
+  cursor: pointer;
+}
+
+.second_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3rem 5rem;
+}
+
+.second_content .left_content {
+  width: 50%;
+}
+.second_content .left_content span {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.right_content img {
+  margin-top: 3.5rem;
+  width: 100%;
+}
+
+.second_content .left_content button {
+  padding: 0.7rem;
+  background-image: linear-gradient(180deg, #ff6f48, #f02aa6);
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 1.2rem;
+  width: 20%;
+  margin-top: 1.3rem;
+  cursor: pointer;
+}
+
+.second_content .left_content button:active {
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 111, 72.4),
+    rgba(240, 42, 166, 0.4)
+  );
+}
+
+.purple_background {
+  position: absolute;
+  right: -5rem;
+  top: -10.4rem;
+  width: 15%;
+  height: 580px;
+  padding: 6rem;
+  transform: rotate(47deg);
+  z-index: -1;
+  background-image: linear-gradient(#4851ff 20%, #f02aa6);
+}
+.box_container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 0 5rem;
+  column-gap: 26px;
+  row-gap: 50px;
+}
+
+.first_box,
+.second_box,
+.third_box,
+.fourth_box,
+.fifth_box,
+.sixth_box {
+  width: 100%;
+  height: 250px;
+  padding: 2rem 2rem;
+  position: relative;
+  margin-right: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.first_box {
+  background-image: linear-gradient(180deg, #ff6f48, #f02aa6);
+  color: #fff;
+}
+
+svg {
+  position: absolute;
+  top: -1.6rem;
+}
+
+.first_box p,
+.second_box p,
+.third_box p,
+.fourth_box p,
+.fifth_box p,
+.sixth_box p {
+  margin: 0.7rem 0;
+  color: #83869a;
+}
+
+.first_box h3,
+.second_box h3,
+.third_box h3,
+.fourth_box h3,
+.fifth_box h3,
+.sixth_box h3 {
+  margin: 0.7rem 0;
+}
+.first_box button,
+.second_box button,
+.third_box button,
+.fourth_box button,
+.fifth_box button,
+.sixth_box button {
+  position: absolute;
+  bottom: 1.7rem;
+  border: 0;
+  outline: 0;
+  color: #f74780;
+  background: transparent;
+  font-size: 1rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #13183f;
+  color: white;
+  margin-top: 2rem;
+  padding: 1rem 5rem;
+}
+
+.footer button {
+  border: none;
+  color: white;
+  background-image: linear-gradient(#4851ff 5%, #f02aa6 70%);
+  padding: 0.7rem;
+  border-radius: 1.2rem;
+  width: 10%;
+  margin-right: 0.9rem;
+  margin-top: 0.2rem;
+  cursor: pointer;
+}
+
+.footer button:active {
+  background-image: linear-gradient(
+    rgba(72, 81, 255, 0.5) 5%,
+    rgba(240, 42, 166, 0.5) 70%
+  );
+}
+
+@media screen and (max-width: 1024px) {
+  .header button {
+    width: 7.5rem;
+  }
+  .second_content .left_content button {
+    width: 7.5rem;
+  }
+  .right_content img {
+    margin-top: 3.8rem;
+    margin-right: 1rem;
+  }
+  .footer button {
+    width: 7.5rem;
+  }
+
+  .box_container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 5rem;
+    column-gap: 26px;
+    row-gap: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .purple_background,
+  .left_content {
+    display: none;
+  }
+
+  .header {
+    padding: 2rem;
+    font-size: 1.7rem;
+  }
+
+  .header button {
+    padding: 1.1rem 1rem;
+    width: 10rem;
+    font-size: 1rem;
+    border-radius: 5rem;
+  }
+  .right_content img {
+    width: 100%;
+  }
+
+  .box_container {
+    display: block;
+  }
+  .first_box,
+  .second_box,
+  .third_box,
+  .fourth_box,
+  .fifth_box,
+  .sixth_box {
+    margin-top: 2.8rem;
+  }
+  .first_box {
+    height: 120px;
+  }
+}
