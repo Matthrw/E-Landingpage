@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/E-Landingpage/static/css/main.d1133163.css",
+    "main.js": "/E-Landingpage/static/js/main.4a2025c7.js",
+    "static/media/Group 9.png": "/E-Landingpage/static/media/Group 9.3a2386f8f02f79d014fc.png",
+    "index.html": "/E-Landingpage/index.html",
+    "main.d1133163.css.map": "/E-Landingpage/static/css/main.d1133163.css.map",
+    "main.4a2025c7.js.map": "/E-Landingpage/static/js/main.4a2025c7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1133163.css",
+    "static/js/main.4a2025c7.js"
+  ]
+}
